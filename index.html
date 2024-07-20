@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> The Scale Bot </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+
+    <div id="startScreen">
+        <div id="scaleBot" style="text-align: center;">
+            <h1>The Scale Bot &#127900;</h1>
+            <h5> A Practice Tool for Musicians </h5>
+            <div id="startText"> Welcome to the scale randomizer!</div>
+        </div>
+        <div id="button">
+            <button id="startButton">Select scales</button>
+        </div>
+        <br>
+    </div>      
+    
+
+    <div id="selectScales" style="display: none;">
+        <form id="scalesForm" action="ScaleRandomizer.js" method="POST"> 
+            <h4 id='scaleOptions'> Scale Types</h4>
+            <input type="checkbox" id="majorCheckBox" value="majorCheckBox" class="scaletype">
+            <label class="form-control" for="majorCheckBox">Major</label>
+            <br>
+            <input type="checkbox" id="naturalMinorCheckBox" value="naturalMinorCheckBox" class="scaletype">
+            <label class="form-control" for="naturalMinorCheckBox">Natural Minor</label>
+            <br>
+            <input type="checkbox" id="harmonicMinorCheckBox" value="harmonicMinorCheckBox" class="scaletype">
+            <label class="form-control" for="harmonicMinorCheckBox">Harmonic Minor</label>
+            <br>
+            <input type="checkbox" id="melodicMinorCheckBox" value="melodicMinorCheckBox" class="scaletype">
+            <label class="form-control" for="melodicMinorCheckBox">Melodic Minor</label>
+            <br>
+            <br>
+        </form>
+        <div id="imageCheckBoxes"> 
+            <h4 id="userOptions"> Customize </h4>
+            <input type="checkbox" id="insertImageCheckBox" value="insertImageCheckBox">
+            <label class="form-control" for="insertImageCheckBox"> Insert image of scale</label>
+            <br>
+            <input type="checkbox" id="insertArpeggioCheckBox" value="insertArpeggioCheckBox">
+            <label class="form-control" for="insertArpeggioCheckBox"> Insert image of arpeggio </label>
+            <br>
+            <input type="checkbox" id="insertFingeringsCheckBox" value="insertFingeringsCheckBox">
+            <label class="form-control" for="insertFingeringsCheckBox"> Include piano fingerings </label>
+            <br>
+            <br>
+        </div>
+        <button id="submit"> Let's shuffle! </button>
+        <h3 id="warning" style="display: none; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Please select at least one scale type to shuffle</h3>
+    </div> 
+
+        
+    <div id="cards" style="display: none;">
+        <button id="backButton" class="controls"> Back to selection</button>
+        <button id="homeButton" class="controls"> Home </button>
+        <br>
+        <h1 id="scaleOnScreen"> Hello </h1>
+        <br>
+        <img src="" id="scaleImage" style="display:none;">
+        <br>
+        <img src="" id='arpeggioImage' style="display:none;">
+        <button id="nextButton" class="controls"> Next </button>
+    </div>
+    
+    <script  src="ScaleRandomizer.js"></script>
+</body>
+
+</html>
