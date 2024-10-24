@@ -1,3 +1,5 @@
+# Description
+
 Welcome to The Scale Bot! This website is a practice tool for musicians to practice their scales out of order. The site is accessible through:
 
   https://thescalebot.com
