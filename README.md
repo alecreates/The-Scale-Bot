@@ -1,6 +1,8 @@
-## Description
+## About The Scale Bot
 
-Welcome to The Scale Bot! This website is a practice tool for musicians to practice their scales out of order. The site is accessible through:
+Welcome to The Scale Bot! This website is a practice tool for musicians to practice their scales out of order. 
+
+The site is accessible through:
 
   [The Scale Bot](https://thescalebot.com)
 
@@ -11,3 +13,8 @@ Happy practicing!
 ## Technologies Used
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+MuseScore 4 used to generate images of scales and arpeggios.
+
